@@ -1,0 +1,163 @@
+ /* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Darker background */
+  color: #f5f5f5; /* Soft text color */
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+/* Header */
+header {
+  background: #24243e;
+  color: #f5f5f5;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 3px solid #6c63ff;
+}
+
+/* Main Section */
+main {
+  background: #2d2d3f;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+main:hover {
+  transform: scale(1.01); /* Slight scaling effect */
+}
+
+/* Forms */
+form {
+  background: #3b3b5b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+input[type="text"], 
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #6c63ff;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #b68aff;
+  box-shadow: 0 0 5px #b68aff;
+}
+
+button {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #b68aff;
+  transform: translateY(-2px);
+}
+
+/* Post Styles */
+.post {
+  background: #3b3b5b;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.post h3 {
+  color: #f5f5f5;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.post p {
+  color: #bdbdd7;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #24243e;
+  color: #f5f5f5;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .post {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
